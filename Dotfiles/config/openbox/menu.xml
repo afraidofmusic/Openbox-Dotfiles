@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="settings" label="Settings">
+		<item label="Configure Openbox">
+			<action name="Execute">
+				<execute>obconf</execute>
+			</action>
+		</item>
+		<item label="Configure Menu">
+			<action name="Execute">
+				<execute>obmenu</execute>
+			</action>
+		</item>
+		<item label="Configure Look and Feel">
+			<action name="Execute">
+				<execute>lxappearance</execute>
+			</action>
+		</item>
+		<item label="Configure Tint2">
+			<action name="Execute">
+				<execute>tint2conf</execute>
+			</action>
+		</item>
+		<item label="Change Wallpaper">
+			<action name="Execute">
+				<execute>nitrogen</execute>
+			</action>
+		</item>
+		<item label="Configure Display">
+			<action name="Execute">
+				<execute>lxrandr</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="Main Menu"/>
+		<item label="Run Command">
+			<action name="Execute">
+				<execute>rofi -show run</execute>
+			</action>
+		</item>
+		<item label="Thunar">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item label="Firefox Nightly">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="qBittorrent">
+			<action name="Execute">
+				<execute>qbittorrent</execute>
+			</action>
+		</item>
+		<item label="Rhythmbox">
+			<action name="Execute">
+				<execute>rhythmbox</execute>
+			</action>
+		</item>
+		<item label="Spotify">
+			<action name="Execute">
+				<execute>command</execute>
+			</action>
+		</item>
+		<item label="Steam">
+			<action name="Execute">
+				<execute>steam</execute>
+			</action>
+		</item>
+		<item label="Emacs">
+			<action name="Execute">
+				<execute>emacs</execute>
+			</action>
+		</item>
+		<item label="Rxvt Unicode">
+			<action name="Execute">
+				<execute>rxvt-unicode</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="settings"/>
+		<separator/>
+		<item label="Logout">
+			<action name="Exit"/>
+		</item>
+		<item label="Hibernate">
+			<action name="Execute">
+				<execute>systemctl hibernate</execute>
+			</action>
+		</item>
+		<item label="Suspend">
+			<action name="Execute">
+				<execute>systemctl suspend</execute>
+			</action>
+		</item>
+		<item label="Reboot">
+			<action name="Execute">
+				<execute>systemctl reboot</execute>
+			</action>
+		</item>
+		<item label="Poweroff">
+			<action name="Execute">
+				<execute>systemctl poweroff</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+	</menu>
+</openbox_menu>
