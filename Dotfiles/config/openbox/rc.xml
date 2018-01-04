@@ -185,6 +185,11 @@
         <command>rofi -show run</command>
       </action>
     </keybind>
+    <keybind key="A-t">
+      <action name="Execute">
+        <command>rxvt-unicode</command>
+      </action>
+    </keybind>
     <keybind key="A-S-p">
       <action name="Execute">
         <command>rofi -show drun</command>
@@ -908,6 +913,8 @@
 
   # end of the example
 -->
-    <!-- match all windows, and remove their decorations -->
+      <application name="rxvt-unicode">
+        <decor>no</decor>
+      </application>
   </applications>
 </openbox_config>
