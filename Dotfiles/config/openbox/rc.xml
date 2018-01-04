@@ -179,18 +179,22 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+    <!-- Reconfigure -->
+    <keybind key="W-F12">
+      <action name="Reconfigure"></action>
+    </keybind>
     <!-- My Kyebinds Go Here -->
-    <keybind key="A-p">
+    <keybind key="W-p">
       <action name="Execute">
         <command>rofi -show run</command>
       </action>
     </keybind>
-    <keybind key="A-t">
+    <keybind key="W-t">
       <action name="Execute">
         <command>rxvt-unicode</command>
       </action>
     </keybind>
-    <keybind key="A-S-p">
+    <keybind key="W-S-p">
       <action name="Execute">
         <command>rofi -show drun</command>
       </action>
@@ -239,153 +243,31 @@
       </action>
     </keybind>
     <!-- My Window Keybinds -->
-    <keybind key="W-z">
+    <keybind key="W-h">
+     <action name="UnmaximizeFull"/>
+     <action name="MaximizeVert"/>
+     <action name="MoveResizeTo"> <width>50%</width> </action>
+     <action name="MoveToEdgeWest"/>
+    </keybind>
+    <keybind key="W-j">
       <action name="Iconify"/>
     </keybind>
-    <keybind key="W-x">
+    <keybind key="W-k">
       <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="W-l">
+     <action name="UnmaximizeFull"/>
+     <action name="MaximizeVert"/>
+     <action name="MoveResizeTo"> <width>50%</width> </action>
+     <action name="MoveToEdgeEast"/>
     </keybind>
     <keybind key="W-c">
       <action name="ToggleDecorations"/>
     </keybind>
-    <keybind key="W-S-q">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="W-d">
-      <action name="MoveRelative">
-        <x>5</x>
-        <y>0</y>
-      </action>
-    </keybind>
-    <keybind key="W-a">
-      <action name="MoveRelative">
-        <x>-5</x>
-        <y>0</y>
-      </action>
-    </keybind>
-    <keybind key="W-s">
-      <action name="MoveRelative">
-        <x>0</x>
-        <y>5</y>
-      </action>
-    </keybind>
-    <keybind key="W-w">
-      <action name="MoveRelative">
-        <x>0</x>
-        <y>-5</y>
-      </action>
-    </keybind>
-    <keybind key="W-S-s">
-      <action name="ResizeRelative">
-        <bottom>5</bottom>
-      </action>
-    </keybind>
-    <keybind key="W-S-w">
-      <action name="ResizeRelative">
-        <bottom>-5</bottom>
-      </action>
-    </keybind>
-    <keybind key="W-S-a">
-      <action name="ResizeRelative">
-        <right>-5</right>
-      </action>
-    </keybind>
-    <keybind key="W-S-d">
-      <action name="ResizeRelative">
-        <right>5</right>
-      </action>
-    </keybind>
-    <!-- My Keybinds Go Here -->
-    <!-- Keybindings for desktop switching -->
-    <keybind key="C-A-Left">
-      <action name="GoToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Right">
-      <action name="GoToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Up">
-      <action name="GoToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Down">
-      <action name="GoToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Left">
-      <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Right">
-      <action name="SendToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Up">
-      <action name="SendToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Down">
-      <action name="SendToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-1">
-      <action name="GoToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="W-2">
-      <action name="GoToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="W-3">
-      <action name="GoToDesktop">
-        <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="W-4">
-      <action name="GoToDesktop">
-        <to>4</to>
-      </action>
-    </keybind>
-    <keybind key="W-f">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
-    <!-- Keybindings for windows -->
-    <keybind key="A-F4">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="A-Escape">
-      <action name="Lower"/>
-      <action name="FocusToBottom"/>
-      <action name="Unfocus"/>
-    </keybind>
+    <!-- Client Menu -->
     <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
-      </action>
-    </keybind>
-    <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
-    <keybind key="A-Print">
-      <action name="Execute">
-        <command>scrot -s</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
@@ -398,6 +280,33 @@
         </finalactions>
       </action>
     </keybind>
+    <!-- Changing Desktop -->
+    <keybind key="W-1">
+      <action name="GoToDesktop"><to>1</to></action>
+    </keybind>
+    <keybind key="W-2">
+      <action name="GoToDesktop"><to>2</to></action>
+    </keybind>
+    <keybind key="W-3">
+      <action name="GoToDesktop"><to>3</to></action>
+    </keybind>
+    <keybind key="W-4">
+      <action name="GoToDesktop"><to>4</to></action>
+    </keybind>
+    <!-- Send to Desktop -->
+    <keybind key="W-S-1">
+      <action name="SendToDesktop"><to>1</to><follow>no</follow></action>
+    </keybind>
+    <keybind key="W-S-2">
+      <action name="SendToDesktop"><to>2</to><follow>no</follow></action>
+    </keybind>
+    <keybind key="W-S-3">
+      <action name="SendToDesktop"><to>3</to><follow>no</follow></action>
+    </keybind>
+    <keybind key="W-S-4">
+      <action name="SendToDesktop"><to>4</to><follow>no</follow></action>
+    </keybind>
+  </keyboard>
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
         <finalactions>
@@ -418,44 +327,12 @@
         </finalactions>
       </action>
     </keybind>
-    <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="W-S-Right">
-      <action name="DirectionalCycleWindows">
-        <direction>right</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Left">
-      <action name="DirectionalCycleWindows">
-        <direction>left</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Up">
-      <action name="DirectionalCycleWindows">
-        <direction>up</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Down">
-      <action name="DirectionalCycleWindows">
-        <direction>down</direction>
-      </action>
-    </keybind>
-    <!-- Keybindings for running applications -->
-    <keybind key="W-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
-      </action>
-    </keybind>
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
         <command>scrot</command>
       </action>
     </keybind>
-  </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
@@ -913,8 +790,10 @@
 
   # end of the example
 -->
-      <application name="rxvt-unicode">
-        <decor>no</decor>
-      </application>
+    <!-- match all windows, and remove their decorations -->
+    <!-- but give decorations back to Firefox -->
+    <application name="rxvt-unicode">
+      <decor>no</decor>
+    </application>
   </applications>
 </openbox_config>
