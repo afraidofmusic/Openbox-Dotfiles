@@ -1,5 +1,6 @@
 URxvt*font: xft:Source Code Pro Font:Medium:size=8
 URxvt.letterSpace: -1
+URxvt.internalBorder:  10
 
 Xft.dpi:        96
 Xft.antialias:  true
