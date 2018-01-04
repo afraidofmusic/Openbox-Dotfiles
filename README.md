@@ -2,6 +2,7 @@
 
 ## Featuring
 * [Openbox-Patched](https://github.com/dylanaraps/openbox-patched)
+* [Adapta](https://github.com/adapta-project/adapta-gtk-theme)
 * Tint2
 * Dunst
 
