@@ -11,24 +11,24 @@
 				<execute>obmenu</execute>
 			</action>
 		</item>
-		<item label="Configure Look and Feel">
-			<action name="Execute">
-				<execute>lxappearance</execute>
-			</action>
-		</item>
 		<item label="Configure Tint2">
 			<action name="Execute">
 				<execute>tint2conf</execute>
 			</action>
 		</item>
-		<item label="Change Wallpaper">
-			<action name="Execute">
-				<execute>nitrogen</execute>
-			</action>
-		</item>
 		<item label="Configure Display">
 			<action name="Execute">
 				<execute>lxrandr</execute>
+			</action>
+		</item>
+		<item label="Change Look and Feel">
+			<action name="Execute">
+				<execute>lxappearance</execute>
+			</action>
+		</item>
+		<item label="Change Wallpaper">
+			<action name="Execute">
+				<execute>nitrogen</execute>
 			</action>
 		</item>
 	</menu>
@@ -61,7 +61,7 @@
 		</item>
 		<item label="Spotify">
 			<action name="Execute">
-				<execute>command</execute>
+				<execute>flatpak run com.spotify.Client</execute>
 			</action>
 		</item>
 		<item label="Steam">
