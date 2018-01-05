@@ -181,22 +181,17 @@
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Reconfigure -->
     <keybind key="W-F12">
-      <action name="Reconfigure"></action>
+      <action name="Reconfigure"/>
     </keybind>
     <!-- My Kyebinds Go Here -->
     <keybind key="W-p">
       <action name="Execute">
-        <command>rofi -show run</command>
+        <command>dmenu_run -x 5 -y 5 -lh 30 -w 1355 -fn 'Roboto Bold-8' -nb '#222D32' -sb '#263238' -nf '#CFD7DB' -sf '#CFD7DB'</command>
       </action>
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
         <command>rxvt-unicode</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-p">
-      <action name="Execute">
-        <command>rofi -show drun</command>
       </action>
     </keybind>
     <!-- Brightness -->
@@ -244,10 +239,12 @@
     </keybind>
     <!-- My Window Keybinds -->
     <keybind key="W-h">
-     <action name="UnmaximizeFull"/>
-     <action name="MaximizeVert"/>
-     <action name="MoveResizeTo"> <width>50%</width> </action>
-     <action name="MoveToEdgeWest"/>
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+      </action>
+      <action name="MoveToEdgeWest"/>
     </keybind>
     <keybind key="W-j">
       <action name="Iconify"/>
@@ -256,10 +253,15 @@
       <action name="ToggleMaximize"/>
     </keybind>
     <keybind key="W-l">
-     <action name="UnmaximizeFull"/>
-     <action name="MaximizeVert"/>
-     <action name="MoveResizeTo"> <width>50%</width> </action>
-     <action name="MoveToEdgeEast"/>
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+      </action>
+      <action name="MoveToEdgeEast"/>
+    </keybind>
+    <keybind key="W-S-q">
+      <action name="Close"/>
     </keybind>
     <keybind key="W-c">
       <action name="ToggleDecorations"/>
@@ -282,57 +284,77 @@
     </keybind>
     <!-- Changing Desktop -->
     <keybind key="W-1">
-      <action name="GoToDesktop"><to>1</to></action>
+      <action name="GoToDesktop">
+        <to>1</to>
+      </action>
     </keybind>
     <keybind key="W-2">
-      <action name="GoToDesktop"><to>2</to></action>
+      <action name="GoToDesktop">
+        <to>2</to>
+      </action>
     </keybind>
     <keybind key="W-3">
-      <action name="GoToDesktop"><to>3</to></action>
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
     </keybind>
     <keybind key="W-4">
-      <action name="GoToDesktop"><to>4</to></action>
+      <action name="GoToDesktop">
+        <to>4</to>
+      </action>
     </keybind>
     <!-- Send to Desktop -->
     <keybind key="W-S-1">
-      <action name="SendToDesktop"><to>1</to><follow>no</follow></action>
+      <action name="SendToDesktop">
+        <to>1</to>
+        <follow>no</follow>
+      </action>
     </keybind>
     <keybind key="W-S-2">
-      <action name="SendToDesktop"><to>2</to><follow>no</follow></action>
+      <action name="SendToDesktop">
+        <to>2</to>
+        <follow>no</follow>
+      </action>
     </keybind>
     <keybind key="W-S-3">
-      <action name="SendToDesktop"><to>3</to><follow>no</follow></action>
+      <action name="SendToDesktop">
+        <to>3</to>
+        <follow>no</follow>
+      </action>
     </keybind>
     <keybind key="W-S-4">
-      <action name="SendToDesktop"><to>4</to><follow>no</follow></action>
+      <action name="SendToDesktop">
+        <to>4</to>
+        <follow>no</follow>
+      </action>
     </keybind>
   </keyboard>
-    <keybind key="A-S-Tab">
-      <action name="PreviousWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <!-- Launch scrot when Print is pressed -->
-    <keybind key="Print">
-      <action name="Execute">
-        <command>scrot</command>
-      </action>
-    </keybind>
+  <keybind key="A-S-Tab">
+    <action name="PreviousWindow">
+      <finalactions>
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </finalactions>
+    </action>
+  </keybind>
+  <keybind key="C-A-Tab">
+    <action name="NextWindow">
+      <panels>yes</panels>
+      <desktop>yes</desktop>
+      <finalactions>
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </finalactions>
+    </action>
+  </keybind>
+  <!-- Launch scrot when Print is pressed -->
+  <keybind key="Print">
+    <action name="Execute">
+      <command>scrot</command>
+    </action>
+  </keybind>
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->

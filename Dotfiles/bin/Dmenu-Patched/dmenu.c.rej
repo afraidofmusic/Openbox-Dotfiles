@@ -1,0 +1,10 @@
+--- dmenu.c
++++ dmenu.c
+@@ -612,6 +615,7 @@ static void
+ usage(void)
+ {
+ 	fputs("usage: dmenu [-b] [-f] [-i] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
++	      "             [-x xoffset] [-y yoffset] [-w width]\n"
+ 	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-v]\n", stderr);
+ 	exit(1);
+ }
