@@ -186,7 +186,7 @@
     <!-- My Kyebinds Go Here -->
     <keybind key="W-p">
       <action name="Execute">
-        <command>dmenu_run -x 5 -y 5 -lh 30 -w 1355 -fn 'Roboto Bold-8' -nb '#222D32' -sb '#263238' -nf '#CFD7DB' -sf '#CFD7DB'</command>
+        <command>dmenu_run -x 8 -y 8 -lh 24 -w 1352 -fn 'Roboto Bold-8' -nb '#222D32' -sb '#263238' -nf '#CFD7DB' -sf '#CFD7DB'</command>
       </action>
     </keybind>
     <keybind key="W-t">
