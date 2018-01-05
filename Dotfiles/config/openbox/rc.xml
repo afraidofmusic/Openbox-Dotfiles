@@ -817,5 +817,14 @@
     <application name="rxvt-unicode">
       <decor>no</decor>
     </application>
+    <application class="Nightly">
+      <decor>no</decor>
+    </application>
+    <application title="streamlink">
+      <decor>no</decor>
+      <layer>above</layer>
+      <skip_taskbar>yes</skip_taskbar>
+      <skip_pager>yes</skip_pager>
+    </application>
   </applications>
 </openbox_config>
