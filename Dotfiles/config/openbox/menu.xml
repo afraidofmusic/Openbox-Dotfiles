@@ -34,11 +34,6 @@
 	</menu>
 	<menu id="root-menu" label="Openbox 3">
 		<separator label="Main Menu"/>
-		<item label="Run Command">
-			<action name="Execute">
-				<execute>rofi -show run</execute>
-			</action>
-		</item>
 		<item label="Thunar">
 			<action name="Execute">
 				<execute>thunar</execute>
@@ -64,9 +59,19 @@
 				<execute>flatpak run com.spotify.Client</execute>
 			</action>
 		</item>
+		<item label="OpenMW">
+			<action name="Execute">
+				<execute>flatpak run org.openmw.OpenMW</execute>
+			</action>
+		</item>
 		<item label="Steam">
 			<action name="Execute">
 				<execute>steam</execute>
+			</action>
+		</item>
+		<item label="Virtualbox">
+			<action name="Execute">
+				<execute>virtualbox</execute>
 			</action>
 		</item>
 		<item label="Emacs">
