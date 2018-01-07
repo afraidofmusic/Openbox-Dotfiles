@@ -190,10 +190,10 @@
       </action>
     </keybind>
     <keybind key="C-S-A-m">
-        <action name="ShowMenu">
-           <menu>root-menu</menu>
-        </action>
-   </keybind>
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
     <keybind key="W-t">
       <action name="Execute">
         <command>rxvt-unicode</command>
@@ -822,14 +822,13 @@
     <application name="rxvt-unicode">
       <decor>no</decor>
     </application>
-    <application class="Nightly">
+    <application class="Firefox">
       <decor>no</decor>
     </application>
     <application title="streamlink">
       <decor>no</decor>
       <layer>above</layer>
       <skip_taskbar>yes</skip_taskbar>
-      <skip_pager>yes</skip_pager>
       <desktop>all</desktop>
     </application>
     <!-- Firefox Minvid -->
@@ -837,7 +836,6 @@
       <decor>no</decor>
       <layer>above</layer>
       <skip_taskbar>yes</skip_taskbar>
-      <skip_pager>yes</skip_pager>
       <desktop>all</desktop>
     </application>
   </applications>
