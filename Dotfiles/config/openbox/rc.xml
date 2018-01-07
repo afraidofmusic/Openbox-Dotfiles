@@ -183,7 +183,7 @@
     <keybind key="W-F12">
       <action name="Reconfigure"/>
     </keybind>
-    <!-- My Kyebinds Go Here -->
+    <!-- My Keybinds Go Here -->
     <keybind key="W-p">
       <action name="Execute">
         <command>dmenu_run -x 8 -y 8 -lh 24 -w 1352 -fn 'Roboto Bold-8' -nb '#222D32' -sb '#263238' -nf '#CFD7DB' -sf '#CFD7DB'</command>
@@ -825,14 +825,13 @@
     <application class="Firefox">
       <decor>no</decor>
     </application>
-    <application title="streamlink">
+    <application title="Unnamed Window" class="Firefox">
       <decor>no</decor>
       <layer>above</layer>
       <skip_taskbar>yes</skip_taskbar>
       <desktop>all</desktop>
     </application>
-    <!-- Firefox Minvid -->
-    <application title="Unnamed Window">
+    <application title="streamlink">
       <decor>no</decor>
       <layer>above</layer>
       <skip_taskbar>yes</skip_taskbar>
