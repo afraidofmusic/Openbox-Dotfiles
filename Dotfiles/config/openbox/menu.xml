@@ -3,9 +3,9 @@
 	<menu id="root-menu" label="Openbox 3">
 		<separator label="Main Menu"/>
 		<menu execute="openbox-menu -i lxde-applications.menu" id="" label="Applications"/>
-		<item label="Thunar">
+		<item label="Emacs">
 			<action name="Execute">
-				<execute>thunar</execute>
+				<execute>emacs</execute>
 			</action>
 		</item>
 		<item label="Mozilla Firefox">
@@ -13,29 +13,9 @@
 				<execute>firefox</execute>
 			</action>
 		</item>
-		<item label="qBittorrent">
-			<action name="Execute">
-				<execute>qbittorrent</execute>
-			</action>
-		</item>
 		<item label="Rhythmbox">
 			<action name="Execute">
 				<execute>rhythmbox</execute>
-			</action>
-		</item>
-		<item label="Spotify">
-			<action name="Execute">
-				<execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=spotify com.spotify.Client</execute>
-			</action>
-		</item>
-		<item label="Virtualbox">
-			<action name="Execute">
-				<execute>virtualbox</execute>
-			</action>
-		</item>
-		<item label="Emacs">
-			<action name="Execute">
-				<execute>emacs</execute>
 			</action>
 		</item>
 		<item label="Rxvt-Unicode">
@@ -43,8 +23,58 @@
 				<execute>rxvt-unicode</execute>
 			</action>
 		</item>
+		<item label="Spotify">
+			<action name="Execute">
+				<execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=spotify com.spotify.Client</execute>
+			</action>
+		</item>
+		<item label="Thunar">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item label="Virtualbox">
+			<action name="Execute">
+				<execute>virtualbox</execute>
+			</action>
+		</item>
+		<item label="qBittorrent">
+			<action name="Execute">
+				<execute>qbittorrent</execute>
+			</action>
+		</item>
 		<separator label="System"/>
 		<menu id="root-menu-273953" label="Settings">
+			<item label="Change Wallpaper">
+				<action name="Execute">
+					<execute>nitrogen</execute>
+				</action>
+			</item>
+			<item label="Configure Compton">
+				<action name="Execute">
+					<execute>emacs ~/.config/compton</execute>
+				</action>
+			</item>
+			<item label="Configure Look and Feel">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item label="Configure Tint2">
+				<action name="Execute">
+					<execute>tint2conf</execute>
+				</action>
+			</item>
+			<item label="Display Settings">
+				<action name="Execute">
+					<execute>lxrandr</execute>
+				</action>
+			</item>
+			<item label="Nvidia Settings">
+				<action name="Execute">
+					<execute>optirun -b none nvidia-settings -c :8</execute>
+				</action>
+			</item>
 			<menu id="root-menu-273953-10400" label="Openbox">
 				<item label="Configure Openbox">
 					<action name="Execute">
@@ -69,7 +99,7 @@
 				</item>
 				<item label="Edit autostart">
 					<action name="Execute">
-						<execute>emacs ~/.config/openbox/autostart.xml</execute>
+						<execute>emacs ~/.config/openbox/autostart</execute>
 					</action>
 				</item>
 				<separator/>
@@ -80,39 +110,9 @@
 					<action name="Restart"/>
 				</item>
 			</menu>
-			<item label="Configure Compton">
-				<action name="Execute">
-					<execute>emacs ~/.config/compton</execute>
-				</action>
-			</item>
-			<item label="Configure Tint2">
-				<action name="Execute">
-					<execute>tint2conf</execute>
-				</action>
-			</item>
-			<item label="Configure Look and Feel">
-				<action name="Execute">
-					<execute>lxappearance</execute>
-				</action>
-			</item>
-			<item label="Change Wallpaper">
-				<action name="Execute">
-					<execute>nitrogen</execute>
-				</action>
-			</item>
-			<item label="Display Settings">
-				<action name="Execute">
-					<execute>lxrandr</execute>
-				</action>
-			</item>
 			<item label="Power Settings">
 				<action name="Execute">
 					<execute>xfce4-power-manager-settings</execute>
-				</action>
-			</item>
-			<item label="Nvidia Settings">
-				<action name="Execute">
-					<execute>optirun -b none nvidia-settings -c :8</execute>
 				</action>
 			</item>
 		</menu>
