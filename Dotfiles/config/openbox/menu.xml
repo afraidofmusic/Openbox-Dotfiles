@@ -20,7 +20,7 @@
 		</item>
 		<item label="Rxvt-Unicode">
 			<action name="Execute">
-				<execute>rxvt-unicode</execute>
+				<execute>urxvt</execute>
 			</action>
 		</item>
 		<item label="Spotify">
@@ -63,6 +63,11 @@
 			<item label="Configure Tint2">
 				<action name="Execute">
 					<execute>tint2conf</execute>
+				</action>
+			</item>
+			<item label="Configure Qt5">
+				<action name="Execute">
+					<execute>qt5ct</execute>
 				</action>
 			</item>
 			<item label="Display Settings">

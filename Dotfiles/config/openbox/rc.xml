@@ -44,7 +44,7 @@
   <theme>
     <cornerRadius menu="no">4</cornerRadius>
     <name>Adapta-Nokto</name>
-    <titleLayout/>
+    <titleLayout>L</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -189,6 +189,11 @@
         <command>dmenu_run -x 8 -y 8 -lh 24 -w 1352 -fn 'Roboto Bold-8' -nb '#222D32' -sb '#263238' -nf '#CFD7DB' -sf '#CFD7DB'</command>
       </action>
     </keybind>
+    <keybind key="W-S-p">
+      <action name="Execute">
+        <command>rofi -show run</command>
+      </action>
+    </keybind>
     <keybind key="C-S-A-m">
       <action name="ShowMenu">
         <menu>root-menu</menu>
@@ -196,7 +201,7 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>rxvt-unicode</command>
+        <command>urxvt</command>
       </action>
     </keybind>
     <!-- Brightness -->
@@ -819,7 +824,7 @@
 -->
     <!-- match all windows, and remove their decorations -->
     <!-- but give decorations back to Firefox -->
-    <application name="rxvt-unicode">
+    <application name="urxvt">
       <decor>no</decor>
     </application>
     <application class="Firefox">
