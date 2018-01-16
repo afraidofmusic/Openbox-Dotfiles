@@ -18,14 +18,14 @@
 				<execute>rhythmbox</execute>
 			</action>
 		</item>
-		<item label="Rxvt-Unicode">
-			<action name="Execute">
-				<execute>urxvt</execute>
-			</action>
-		</item>
 		<item label="Spotify">
 			<action name="Execute">
 				<execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=spotify com.spotify.Client</execute>
+			</action>
+		</item>
+		<item label="St">
+			<action name="Execute">
+				<execute>st</execute>
 			</action>
 		</item>
 		<item label="Thunar">
@@ -121,7 +121,6 @@
 				</action>
 			</item>
 		</menu>
-		<separator/>
 		<item label="Logout">
 			<action name="Exit">
 				<execute>command</execute>

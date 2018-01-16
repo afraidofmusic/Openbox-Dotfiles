@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <cornerRadius menu="no">3</cornerRadius>
+    <cornerRadius menu="no">2</cornerRadius>
     <name>Adapta-Nokto</name>
     <titleLayout>L</titleLayout>
     <!--
@@ -129,7 +129,7 @@
       <name>C</name>
       <name>D</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -154,10 +154,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>40</top>
-    <bottom>5</bottom>
-    <left>5</left>
-    <right>5</right>
+    <top>4</top>
+    <bottom>4</bottom>
+    <left>4</left>
+    <right>4</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -186,7 +186,7 @@
     <!-- My Keybinds Go Here -->
     <keybind key="W-p">
       <action name="Execute">
-        <command>dmenu_run -x 8 -y 8 -lh 24 -w 1352 -fn 'Roboto Bold-8' -nb '#222D32' -sb '#263238' -nf '#CFD7DB' -sf '#CFD7DB'</command>
+        <command>dmenu_run -x 6 -y 6 -lh 24 -w 1352 -fn 'Roboto Bold-8' -nb '#222D32' -sb '#263238' -nf '#CFD7DB' -sf '#CFD7DB'</command>
       </action>
     </keybind>
     <keybind key="W-S-p">
@@ -201,7 +201,7 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>urxvt</command>
+        <command>st</command>
       </action>
     </keybind>
     <!-- Brightness -->
@@ -824,7 +824,7 @@
 -->
     <!-- match all windows, and remove their decorations -->
     <!-- but give decorations back to Firefox -->
-    <application name="urxvt">
+    <application class="st-256color">
       <decor>no</decor>
     </application>
     <application class="Firefox">
