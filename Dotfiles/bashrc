@@ -6,7 +6,7 @@ export PATH=$PATH:/home/can/.local/bin
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Bash Prompt
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\] \W\[$(tput setaf 7)\] λ \[$(tput sgr0)\]"
+source "$HOME/.bash_prompt"
 # XINIT
 if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
       exec startx
