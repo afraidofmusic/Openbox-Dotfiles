@@ -4,7 +4,7 @@ function parse_git_branch() {
 	if [ ! "${BRANCH}" == "" ]
 	then
 		STAT=`parse_git_dirty`
-		echo "${BRANCH}${STAT}"
+		echo "${BRANCH}${STAT} "
 	else
 		echo ""
 	fi
@@ -46,8 +46,8 @@ function parse_git_dirty {
 }
 # Bash Prompt
 if [ "$color_prompt" = yes ]; then
-    PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\W \[$(tput setaf 3)\]\`parse_git_branch\`\[$(tput setaf 7)\] λ \[$(tput sgr0)\]"
+    PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\W \[$(tput setaf 3)\]\`parse_git_branch\`\[$(tput setaf 7)\]λ \[$(tput sgr0)\]"
 else
-    PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\W \[$(tput setaf 3)\]\`parse_git_branch\`\[$(tput setaf 7)\] λ \[$(tput sgr0)\]"
+    PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\W \[$(tput setaf 3)\]\`parse_git_branch\`\[$(tput setaf 7)\]λ \[$(tput sgr0)\]"
 fi;
 unset color_prompt force_color_prompt;
