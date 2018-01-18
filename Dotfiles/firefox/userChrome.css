@@ -1,42 +1,49 @@
 /* Change Navbar Background */
 #nav-bar { background: #222D32 !important; border-top:none !important; }
 /* Remove Three Dots */
-#pageActionButton {
-  display: none !important;
-}
+#pageActionButton { display: none !important; }
 /* No 'i' icon */
-#identity-icon {
-    display: none !important;
-}
+#identity-icon { display: none !important; }
 /* No lock icon */
-#identity-box {
-    display: none !important;
-}
+#identity-box { display: none !important; }
 /* Short URL https://raw.githubusercontent.com/TanzNukeTerror/Custom-Firefox/master/bindings.xml */
-#urlbar {
-	-moz-binding: url("bindings.xml#urlbar") !important;
-}
+#urlbar { -moz-binding: url("bindings.xml#urlbar") !important; }
 /* Center URL */
 #urlbar .urlbar-input-box {
-    text-align: center;
+	text-align: center;
 	margin-bottom: 1px;
 }
+
 /* Autohide Tabs */
 #TabsToolbar {
-	position: relative;
-	transition: all 0.3s ease 0s !important;
+	position:  sticky !important;
 	min-height: 37px !important;
 	margin-top: -37px !important;
 	border-top: 0px;
 	padding-top: 0;
-	-moz-box-ordinal-group: 2 !important;}
-#navigator-toolbox:hover {
-	margin-bottom: -37px !important;
-	transition-delay: 0s !important; }
-#navigator-toolbox:hover > #TabsToolbar {
-	margin-top: 0 !important;
-	transition-delay: 0s !important; }
+	-moz-box-ordinal-group: 2 !important;
+}
+#navigator-toolbox:hover { margin-bottom: -37px !important;}
+#navigator-toolbox:hover > #TabsToolbar { margin-top: 0px !important;}
 
-.tab-background[selected="true"] {
-	background: #222D32 !important ;
+/* Active Tab Background */
+.tab-background[selected="true"] { background: transparent !important; }
+
+/* Tab Line at Bottom */
+.tab-line { -moz-box-ordinal-group: 2; }
+
+.tabs-newtab-button,
+.tab-close-button.tab-close-button { display: none !important; }
+
+/* */
+#TabsToolbar[movingtab] {
+  padding-bottom: -0px !important;
+}
+#TabsToolbar[movingtab] > .tabbrowser-tabs {
+  padding-bottom: -0px !important;
+  margin-bottom: -0px !important;
+}
+#TabsToolbar[movingtab] + #nav-bar {
+  margin-top: -0px !important;
+  pointer-events: none;
 }
