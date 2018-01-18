@@ -25,14 +25,13 @@
 #TabsToolbar {
 	position: relative;
 	transition: all 0.3s ease 0s !important;
-	min-height: 30px !important;
-	-moz-box-ordinal-group: 2 !important; }
-#TabsToolbar {
-    /*overflow: hidden;*/
-	margin-top: -28px !important;
-	transition: all 0.3s ease 0s !important; }
+	min-height: 37px !important;
+	margin-top: -37px !important;
+	border-top: 0px;
+	padding-top: 0;
+	-moz-box-ordinal-group: 2 !important;}
 #navigator-toolbox:hover {
-	margin-bottom: -28px !important;
+	margin-bottom: -37px !important;
 	transition-delay: 0s !important; }
 #navigator-toolbox:hover > #TabsToolbar {
 	margin-top: 0 !important;
