@@ -44,7 +44,7 @@
   <theme>
     <cornerRadius menu="no">2</cornerRadius>
     <name>Adapta-Nokto</name>
-    <titleLayout>LIMC</titleLayout>
+    <titleLayout>L</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -68,7 +68,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Roboto</name>
-      <size>8</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -85,7 +85,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Roboto</name>
+      <name>Roboto Medium</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -160,14 +160,14 @@
     <right>4</right>
   </margins>
   <dock>
-    <position>TopLeft</position>
+    <position>Top</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
-    <noStrut>no</noStrut>
+    <noStrut>yes</noStrut>
     <stacking>Above</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
-    <direction>Vertical</direction>
+    <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
     <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
@@ -199,7 +199,7 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-t">
+    <keybind key="W-Return">
       <action name="Execute">
         <command>st</command>
       </action>
@@ -250,25 +250,73 @@
     <!-- My Window Keybinds -->
     <keybind key="W-h">
       <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
+      <action name="ToggleMaximize"><direction>Vertical</direction></action>
       <action name="MoveResizeTo">
         <width>50%</width>
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
+    <keybind key="W-S-h">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+	<height>50%</height>
+      </action>
+      <action name="MoveToEdgeNorth"/>
+      <action name="MoveToEdgeWest"/>
+    </keybind>
     <keybind key="W-j">
-      <action name="Iconify"/>
+      <action name="UnmaximizeFull"/>
+      <action name="ToggleMaximize"><direction>Horizontal</direction></action>
+      <action name="MoveResizeTo"><height>50%</height></action>
+      <action name="MoveToEdgeSouth"/>
+    </keybind>
+    <keybind key="W-S-j">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+	<height>50%</height>
+      </action>
+      <action name="MoveToEdgeSouth"/>
+      <action name="MoveToEdgeWest"/>
     </keybind>
     <keybind key="W-k">
-      <action name="ToggleMaximize"/>
+      <action name="UnmaximizeFull"/>
+      <action name="ToggleMaximize"><direction>Horizontal</direction></action>
+      <action name="MoveResizeTo"><height>50%</height></action>
+      <action name="MoveToEdgeNorth"/>
+    </keybind>
+    <keybind key="W-S-k">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+	<height>50%</height>
+      </action>
+      <action name="MoveToEdgeNorth"/>
+      <action name="MoveToEdgeEast"/>
     </keybind>
     <keybind key="W-l">
       <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
+      <action name="ToggleMaximize"><direction>Vertical</direction></action>
       <action name="MoveResizeTo">
         <width>50%</width>
       </action>
       <action name="MoveToEdgeEast"/>
+    </keybind>
+    <keybind key="W-S-l">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+	<height>50%</height>
+      </action>
+      <action name="MoveToEdgeSouth"/>
+      <action name="MoveToEdgeEast"/>
+    </keybind>
+    <keybind key="W-m">
+      <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="W-S-m">
+      <action name="Iconify"/>
     </keybind>
     <keybind key="W-S-q">
       <action name="Close"/>
